@@ -1,0 +1,13 @@
+
+li a i{
+    color: orange;
+    font-size: 1.2rem;
+}
+.first-nav .navbar-nav{
+    display: flex !important;
+}
+@media (min-width: 500px) {
+    .first-nav .navbar-nav{
+        display: flex !important;
+    }
+}
