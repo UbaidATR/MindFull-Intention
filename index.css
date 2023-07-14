@@ -8,6 +8,6 @@ li a i{
 }
 @media (min-width: 500px) {
     .first-nav .navbar-nav{
-        display: flex !important;
+        flex-direction: row;
     }
 }
