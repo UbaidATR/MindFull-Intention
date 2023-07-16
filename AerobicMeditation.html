@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Aerobic Meditation</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -19,41 +19,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="index.css">
-  <script src="index.json"></script>
+  <link rel="stylesheet" href="Css\index.css">
+  <script src="javascript\index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="Images\favicon-Logo.png" type="image/x-icon">
 </head>
+<style>
+
+</style>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark first-nav">
-    <a class="navbar-brand d-md-none d-sm-block text-warning" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-sm-flex" id="icon-nav">
-          <li  class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-brands fa-youtube"></i></a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+
+  <div
+    class="social-icons container-fliud d-flex align-items-center d-sm-none d-md-none d-lg-flex justify-content-around bg-dark">
+    <div id="icon-nav">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=" https://wa.me/03165923893" target="_blank"><i class="fa-brands px-sm-4 fa-instagram"></i></a>
+      <a href=""><i class="fa fa-envelope"></i></a>
+      <a href="#"><i class="fa-brands px-sm-4 fa-youtube"></i></a>
     </div>
-  </nav>
-  <nav style="background-color: rgb(143, 140, 140);" class="navbar p-0 navbar-expand-lg navbar-light">
+    <a class="logo" href="#"><img src="Images\favicon-Logo-2.png" alt=""></a>
+    <div class="div">
+      <button class="btn btn-outline-warning" onclick="document.location.href=''">Sing-In</button>
+      <button class="btn btn-outline-warning">Sing-Up</button>
+    </div>
+  </div>
+  <nav id="sticky-nav" style="background-color: rgb(143, 140, 140);" class="navbar p-0 navbar-expand-lg navbar-light">
     <div class="container-fluid">
+      <a class="logo d-md-none d-sm-block" href="#"><img src="Images\favicon-Logo-2.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentl"
         aria-controls="navbarSupportedContentl" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,34 +56,112 @@
       <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContentl">
         <div class="div">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link " href="#"></a>
+
+            <li class="nav-item hover">
+              <a class="x-hover nav-link mx-md-4" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-md-4" href="#">Home</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Soulful Pulse</a></li>
+                <li><a class="dropdown-item" href="#">Meditative Motion:</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">ZenFlow</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-md-4" href="#">Course</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Articles
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"> Boosting Mental and Physical Health</a></li>
+                <li><a class="dropdown-item" href="#">Unleashing Your Full Potential</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#"> Cultivating Mind-Body Harmony</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-md-4" href="#">Articles</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link y-hover dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Books
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Aerobic Meditation</a></li>
+                <li><a class="dropdown-item" href="#">The Power of Flow</a></li>
+                <li><a class="dropdown-item" href="#">The Rhythmic Path</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#"> Mindful Motion</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-md-4" href="#">Books</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-md-4" href="#">Feedback</a>
+            <li class="nav-item hover">
+              <a class="x-hover nav-link mx-md-4" href="#">Feedback</a>
             </li>
           </ul>
         </div>
-        <div class="div">
-          <button class="btn btn-outline-warning">Sing-In</button>
+
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-sm-flex align-items-center d-md-none" id="icon-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-brands px-sm-4 fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-brands px-sm-4 fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-brands px-sm-4 fa-youtube"></i></a>
+          </li>
+        </ul>
+        <div class="div d-md-none">
+          <button class="btn btn-outline-warning" onclick="document.location.href=''">Sign-In</button>
           <button class="btn btn-outline-warning">Sing-Up</button>
         </div>
       </div>
     </div>
   </nav>
-  
+  <section class="search-form">
+    <div class="container-fliud">
+      <div class="index-front">
+        <form class="d-flex center d-lg-flex d-md-flex ">
+          <div class="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </div>
+          <button class="btn btn-outline-success  mx-2 btn-bg" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section2">
+    <div class="container-fliud p-5 bg-dark ">
+      <h1 class="text-center h1">Aerobic Meditation</h1>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-6">
+          <h3>Introduction</h3>
+          <p>In our fast-paced, stress-laden lives, finding ways to achieve mental clarity and physical fitness is of
+            utmost importance. While meditation and exercise are known individually for their numerous health benefits,
+            a recent wellness trend has emerged that combines these two practices: aerobic meditation. This innovative
+            approach merges the principles of mindfulness and aerobic exercise, offering a unique path to achieving
+            holistic well-being. In this article, we will explore the concept of aerobic meditation, its benefits, and
+            how to ncorporate it into your daily routine.</p>
+        </div>
+        <div class="col-md-6 ">
+          <video controls autoplay class="img-fluid w-75 h-75" loop style="background: none;" src="vedio\animation_lk56z2oa.mp4"type="video/mp4" ></video>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
