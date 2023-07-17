@@ -33,9 +33,11 @@ a i:hover{
 /* second header font  */
 .x-hover{
     font-family: 'Lilita One', sans-serif;
+    font-size: x-large;
 }
 .y-hover{
     font-family: 'Lilita One', sans-serif;
+    font-size: x-large;
 }
 /* chnage the color on hover of the content navbar */
 #hover:hover{
@@ -65,10 +67,13 @@ a i:hover{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: -1;
     
+}
+.search-form .container  .row {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 form .form-control{
     outline: none;
@@ -83,16 +88,22 @@ form .btn-bg{
     width: 5rem;
     border-radius: 20px;
 }
-.first-container{
-    position: absolute;
-}
 .container-fliud  .h1{
     color: orange;
+}
+.row h2 , .h2 {
+    color: orange;
+}
+.row p,p{
+    color: white;
+    text-align: justify;
+}
+ul li{
+    list-style-type: none;
 }
 .row h3{
     color: orange;
 }
-.row p{
-    color: white;
-    text-align: justify;
+.cover{
+    background-color: white;
 }
